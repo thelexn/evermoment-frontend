@@ -1,27 +1,9 @@
-<div fxLayout="column" fxLayoutAlign="center center">
+<div class="app-Wrapper" fxLayout="column">
 
-  <div id="header">
-    <h1>
-      Welcome to {{ title }}!
-    </h1>
-  </div>
-<br>
-  <div id="body">
-    <mat-card>
-      <mat-card-header>
+  <app-header></app-header>
 
-        <h1>Hello</h1>
+  <app-main fxFlex></app-main>
 
-      </mat-card-header>
-      <mat-card-content>
-          <p><mat-icon>menu</mat-icon>Test Material, Material-Icon und Flex Layout</p>
-      </mat-card-content>
-    </mat-card>
-  </div>
-
-  <div id="footer">
-
-  </div>
+  <app-footer></app-footer>
 
 </div>
-<router-outlet></router-outlet>
