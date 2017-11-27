@@ -1,9 +1,15 @@
-<div class="appWrapper" fxLayout="column">
+<div class="appWrapper" fxLayout="column" fxLayoutAlign="space-between start">
 
-  <app-header fxFlex></app-header>
+  <div class="header" fxFlex="0 1 250px" fxFlexFill fxLayout="column" fxLayoutAlign="end center">
+    <app-header fxFlexFill></app-header>
+  </div>
 
-  <app-main fxFlex></app-main>
+  <div class="main" fxFlex fxFlexFill>
+    <app-main></app-main>
+  </div>
 
-  <app-footer></app-footer>
+  <div class="footer" fxFlexFill>
+    <app-footer></app-footer>
+  </div>
 
 </div>
