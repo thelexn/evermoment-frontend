@@ -13,70 +13,45 @@
 
   <article>
 
-      <p>
-      Haben Sie sich schon einmal gefragt....was macht einen strahlenden Sieger bei einem Wettkampf, einen erfolgreichen Unternehmer, eine glückliche
-      und zufriedene Mutter aus? Ist es ein angeborenes "Erfolgs-" oder "Glücks-Gen", das diese Menschen haben, oder können diese Fähigkeiten Erfolg
-      und
-      Zufriedenheit erlernt werden? Meiner Meinung nach haben diese Menschen eines gemeinsam:
-      Sie vertrauen sich selbst und haben gelernt, ihre Einstellung zu sich selbst und ihre Ziele so auszurichten, dass sich diese förderlich auf ihr
-      Leben auswirken. Und genau hier setzt mentales Training an.
+    <p>
+      Haben Sie sich schon einmal gefragt....was macht einen strahlenden Sieger bei einem Wettkampf, einen erfolgreichen Unternehmer,
+      eine glückliche und zufriedene Mutter aus? Ist es ein angeborenes "Erfolgs-" oder "Glücks-Gen", das diese Menschen
+      haben, oder können diese Fähigkeiten Erfolg und Zufriedenheit erlernt werden? Meiner Meinung nach haben diese Menschen
+      eines gemeinsam: Sie vertrauen sich selbst und haben gelernt, ihre Einstellung zu sich selbst und ihre Ziele so auszurichten,
+      dass sich diese förderlich auf ihr Leben auswirken. Und genau hier setzt mentales Training an.
     </p>
     <p>
-      Ich begleite Menschen, die mentale Stärke durch Erkennen und Auflösen von festgefahrene Denk-, Verhaltens- und Emotionsmustern erreichen möchten.
-      Ich gebe sowohl im Einzel-Training als auch in Seminaren und Lehrgängen das Wissen zu mentalen Techniken weiter.
+      Ich begleite Menschen, die mentale Stärke durch Erkennen und Auflösen von festgefahrene Denk-, Verhaltens- und Emotionsmustern
+      erreichen möchten. Ich gebe sowohl im Einzel-Training als auch in Seminaren und Lehrgängen das Wissen zu mentalen Techniken
+      weiter.
     </p>
 
   </article>
 
-  <div class="cards" fxLayout.gt-xs="row"  fxLayoutWrap fxLayoutAlign.gt-xs="space-evenly stretch" fxLayout="column" fxLayoutAlign="space-around center">
-      <mat-card fxFlex="0 1 280px" class="mat-elevation-z8">
-        <img mat-card-image src="../../../assets/images/Kind-Gewicht.png" alt="Mentaltraining...?">
-        <mat-card-header  class="card-1">
-          <mat-card-title>Mentaltraining?</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <p>
-              Mentaltraining unterstützt festgefahrene Denk-, Verhaltens- und Emotionsmuster positiv zu verändern.
-          </p>
-        </mat-card-content>
-        <hr>
-        <mat-card-actions>
-          <button mat-button routerLink="/mentaltraining">Weiter...</button>
-        </mat-card-actions>
-      </mat-card>
+  <div class="cards" fxLayout="row" fxLayoutWrap fxLayoutAlign="space-evenly stretch">
 
-      <mat-card fxFlex="0 1 280px" class="mat-elevation-z8">
-        <img mat-card-image src="../../../assets/images/meine_angebote.png" alt="Meine Angebote">
-        <mat-card-header>
-          <mat-card-title>Ich biete...</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <p>
-              Einzeltraining, Workshops, Seminare, Lehrgänge für Einsteiger und Fortgeschrittene - das optimale Angebot zugeschnitten für jedes Level.
-          </p>
-        </mat-card-content>
-        <hr>
-        <mat-card-actions>
-          <button mat-button routerLink="/offers">Weiter...</button>
-        </mat-card-actions>
-      </mat-card>
+    <mat-card *ngFor="let card of cards" fxFlex="0 1 280px" class="mat-elevation-z8">
 
-      <mat-card fxFlex="0 1 280px" class="mat-elevation-z8">
-        <img mat-card-image src="../../../assets/images/übermich.png" alt="Über mich">
-        <mat-card-header>
-          <mat-card-title>Der Trainer</mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <p>
-              Weshalb ich mit Begeisterung Menschen mental begleite.
-          </p>
-        </mat-card-content>
-        <hr>
-        <mat-card-actions>
-          <button mat-button routerLink="/aboutme">Weiter...</button>
-        </mat-card-actions>
-      </mat-card>
+      <img mat-card-image src={{card.imgSrc}} alt={{card.imgAlt}}>
 
-    </div>
+      <mat-card-header>
+        <mat-card-title>{{card.title}}</mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content>
+        <p>
+          {{card.content}}
+        </p>
+      </mat-card-content>
+
+      <hr>
+
+      <mat-card-actions>
+        <button mat-button routerLink={{card.buttonLink}}>{{card.buttonText}}</button>
+      </mat-card-actions>
+    </mat-card>
+
+
+  </div>
 
 </section>
