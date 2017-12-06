@@ -30,7 +30,7 @@
 
   <div class="cards" fxLayout="row" fxLayoutWrap fxLayoutAlign="space-evenly stretch">
 
-    <mat-card *ngFor="let card of cards" fxFlex="0 1 280px" class="mat-elevation-z8">
+    <mat-card *ngFor="let card of cards" fxFlex="0 1 280px" class="mat-elevation-z8" routerLink={{card.buttonLink}}>
 
       <img mat-card-image src={{card.imgSrc}} alt={{card.imgAlt}}>
 
@@ -44,12 +44,14 @@
         </p>
       </mat-card-content>
 
-      <hr>
+      <div fxHide fxShow.gt-xs>
+        <hr>
 
-      <mat-card-actions>
-        <button mat-button routerLink={{card.buttonLink}}>{{card.buttonText}}</button>
-      </mat-card-actions>
-    </mat-card>
+        <mat-card-actions>
+          <button mat-button routerLink={{card.buttonLink}}>{{card.buttonText}}</button>
+        </mat-card-actions>
+      </div>
+      </mat-card>
 
 
   </div>
