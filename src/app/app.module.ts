@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { MatToolbarModule, MatButtonModule, MatCardModule, MatIconModule, MatMenuModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatCardModule, MatIconModule, MatMenuModule, MatTooltipModule } from '@angular/material';
 import 'hammerjs';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -38,6 +38,7 @@ import { ContactComponent } from './main/contact/contact.component';
     MatCardModule,
     MatIconModule,
     MatMenuModule,
+    MatTooltipModule,
     FlexLayoutModule
   ],
   providers: [],
