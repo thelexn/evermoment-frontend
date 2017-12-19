@@ -8,7 +8,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { MainComponent } from './main/main.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './main/home/home.component';
 import { MentaltrainingComponent } from './main/mentaltraining/mentaltraining.component';
@@ -21,7 +20,6 @@ import { ContactComponent } from './main/contact/contact.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    MainComponent,
     FooterComponent,
     HomeComponent,
     MentaltrainingComponent,
