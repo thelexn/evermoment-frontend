@@ -3,7 +3,7 @@
   <button [matMenuTriggerFor]="menu" fxFlexAlign="start" mat-icon-button fxShow fxHide.gt-xs>
     <mat-icon>menu</mat-icon>
   </button>
-  <mat-menu #menu="matMenu">
+  <mat-menu #menu="matMenu" fxShow fxHide.gt-xs>
     <ng-container *ngFor="let link of links">
       <a mat-menu-item *ngIf="link.ext==false"
         [routerLink]="link.url"
@@ -14,15 +14,19 @@
     </ng-container>
   </mat-menu>
 
-  <mat-toolbar fxLayoutAlign="center center" fxHide fxShow.gt-xs>
+  <mat-toolbar fxLayoutAlign="space-between center" fxHide fxShow.gt-xs>
+
+    <div fxFlex.xs="5" fxFlex="10"></div>
     <ng-container *ngFor="let link of links">
-      <a mat-menu-item *ngIf="link.ext==false"
+      <a fxFlex="1 0 auto" mat-menu-item *ngIf="link.ext==false"
         [routerLink]="link.url"
         routerLinkActive="active"
         [routerLinkActiveOptions]="{exact: true}">
         {{link.name}}
       </a>
     </ng-container>
+    <div fxFlex.xs="5" fxFlex="10"></div>
+
   </mat-toolbar>
 
 </section>
