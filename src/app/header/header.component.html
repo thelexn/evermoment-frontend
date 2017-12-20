@@ -16,7 +16,7 @@
 
   <mat-toolbar fxLayoutAlign="space-between center" fxHide fxShow.gt-xs>
 
-    <div fxFlex.xs="5" fxFlex="10"></div>
+    <div fxFlex.xs="5" fxFlex="15"></div>
     <ng-container *ngFor="let link of links">
       <a fxFlex="1 0 auto" mat-menu-item *ngIf="link.ext==false"
         [routerLink]="link.url"
@@ -25,7 +25,7 @@
         {{link.name}}
       </a>
     </ng-container>
-    <div fxFlex.xs="5" fxFlex="10"></div>
+    <div fxFlex.xs="5" fxFlex="15"></div>
 
   </mat-toolbar>
 
