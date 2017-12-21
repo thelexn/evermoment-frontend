@@ -2,7 +2,7 @@ import { Card } from './cards';
 
 export const CARDS: Card[] = [
   { id: 1,
-      imgSrc: '../../../assets/images/Kind-Gewicht.png',
+      imgSrc: '../../../assets/images/strongchild.png',
       imgAlt: 'Mentaltraining...?',
       title: 'Mentaltraining?',
       content: 'Mentaltraining unterstützt festgefahrene Denk-, Verhaltens- und Emotionsmuster positiv zu verändern.',
@@ -10,7 +10,7 @@ export const CARDS: Card[] = [
       buttonText: 'Weiter...'
   },
   { id: 2,
-    imgSrc: '../../../assets/images/meine_angebote.png',
+    imgSrc: '../../../assets/images/myoffers.png',
     imgAlt: 'Meine Angebote',
     title: 'Ich biete...',
     // tslint:disable-next-line:max-line-length
@@ -19,7 +19,7 @@ export const CARDS: Card[] = [
     buttonText: 'Weiter...'
   },
   { id: 3,
-    imgSrc: '../../../assets/images/übermich.png',
+    imgSrc: '../../../assets/images/aboutme.png',
     imgAlt: 'Über mich',
     title: 'Der Trainer',
     content: 'Weshalb ich mit Begeisterung Menschen mental begleite.',
