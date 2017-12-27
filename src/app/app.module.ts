@@ -14,6 +14,7 @@ import { MentaltrainingComponent } from './main/mentaltraining/mentaltraining.co
 import { OffersComponent } from './main/offers/offers.component';
 import { AboutmeComponent } from './main/aboutme/aboutme.component';
 import { ContactComponent } from './main/contact/contact.component';
+import { LeagalComponent } from './main/leagal/leagal.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { ContactComponent } from './main/contact/contact.component';
     MentaltrainingComponent,
     OffersComponent,
     AboutmeComponent,
-    ContactComponent
+    ContactComponent,
+    LeagalComponent
   ],
   imports: [
     BrowserModule,

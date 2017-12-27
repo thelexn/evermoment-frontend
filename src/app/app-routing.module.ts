@@ -6,6 +6,7 @@ import { MentaltrainingComponent } from './main/mentaltraining/mentaltraining.co
 import { OffersComponent } from './main/offers/offers.component';
 import { AboutmeComponent } from './main/aboutme/aboutme.component';
 import { ContactComponent } from './main/contact/contact.component';
+import { LeagalComponent } from './main/leagal/leagal.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'offers', component: OffersComponent },
   { path: 'aboutme', component: AboutmeComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'leagal', component: LeagalComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 

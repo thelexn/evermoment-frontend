@@ -1,13 +1,21 @@
-<section class="footer">
+<section class="footer" >
 
-  <div class="wrapper">
-      <a mat-icon-button target="_blank" href="#" matTooltip="Zu meinen Facebook Auftritt" matTooltipPosition="after">
-        <i class="fa fa-facebook-official"></i>
-      </a>
-      <a mat-icon-button target="_blank" href="#" matTooltip="Zu meinen Twitter Auftritt" matTooltipPosition="after">
-        <i class="fa fa-twitter"></i>
-      </a>
-      <a mat-icon-button target="_blank" href="#" class="imp">Impressum</a>
+  <div fxLayout="row" fxLayoutAlign="start center">
+
+    <a fxFlex="0 0 auto" mat-icon-button target="_blank" href="#" matTooltip="Zu meinen Facebook Auftritt">
+      <i class="fa fa-facebook-official"></i>
+    </a>
+
+    <a fxFlex="0 0 auto" mat-icon-button target="_blank" href="#" matTooltip="Zu meinen Twitter Auftritt">
+      <i class="fa fa-twitter"></i>
+    </a>
+
+    <div fxFlex="1 0 auto"></div>
+
+    <div>
+      <a mat-button routerLink="/leagal" class="imp">Impressum</a>
+    </div>
+
   </div>
 
 </section>

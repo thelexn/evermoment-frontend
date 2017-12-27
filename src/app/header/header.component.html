@@ -1,6 +1,6 @@
-<section class="header" fxFlex="100" fxLayout="column" fxLayoutAlign.gt-xs="end center" fxLayoutAlign="start center">
+<section class="header" fxFlex="100" fxLayout="column" fxLayoutAlign.gt-xs="end center" fxLayoutAlign="start start">
 
-  <button [matMenuTriggerFor]="menu" fxFlexAlign="start" mat-icon-button fxShow fxHide.gt-xs>
+  <button [matMenuTriggerFor]="menu" mat-icon-button fxShow fxHide.gt-xs>
     <mat-icon>menu</mat-icon>
   </button>
   <mat-menu #menu="matMenu" fxShow fxHide.gt-xs>
@@ -14,9 +14,9 @@
     </ng-container>
   </mat-menu>
 
-  <mat-toolbar class="mat-elevation-z8" fxLayoutAlign="space-between center" fxHide fxShow.gt-xs >
+  <mat-toolbar #mtb class="mat-elevation-z8" fxLayout fxLayoutAlign="space-between center" fxHide fxShow.gt-xs >
 
-    <div fxFlex.xs="5" fxFlex="15"></div>
+    <div fxFlex="15"></div>
     <ng-container *ngFor="let link of links">
       <a fxFlex="1 0 auto" mat-menu-item *ngIf="link.ext==false"
         [routerLink]="link.url"
@@ -25,7 +25,7 @@
         {{link.name}}
       </a>
     </ng-container>
-    <div fxFlex.xs="5" fxFlex="15"></div>
+    <div fxFlex="15"></div>
 
   </mat-toolbar>
 
