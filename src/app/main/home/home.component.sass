@@ -12,12 +12,16 @@
       margin-left: 200px
 
   mat-card
-    min-width: 180px
-    margin: 10px auto
+    margin: 10px auto //fix für IE
     border-radius: 0 0 8px 8px
-
-    mat-card-content
-      min-height: 100px
+    cursor: pointer
+    @media only screen and (min-width: 600px)
+      cursor: default
 
     img
       height: 186px
+
+    mat-card-content
+      @media only screen and (min-width: 600px)
+        min-height: 100px
+
