@@ -1,11 +1,9 @@
 .contact
-  p
-    text-align: center
 
   .contactdata
     display: block
-    max-width: 75%
-    margin: 0 auto
+    max-width: 80%
+    margin: 10px auto
     text-align: center
 
     ul
@@ -18,8 +16,12 @@
           text-decoration: none
 
   .map
-    margin: 0.83em auto
+    margin: 30px auto
 
     iframe
       height: 250px
-      min-width: 450px
+      @media only screen and (min-width: 480px)
+        min-width: 410px
+
+  p
+    text-align: center
