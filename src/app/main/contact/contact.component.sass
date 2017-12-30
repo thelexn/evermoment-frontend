@@ -14,12 +14,17 @@
         list-style-type: none
         a
           text-decoration: none
+          transition: all 0.2s
+          &:hover
+            transform: scale(1.1)
+            font-weight: bold
 
   .map
     margin: 30px auto
 
     iframe
-      height: 250px
+      border: 0
+      height: 300px
       @media only screen and (min-width: 480px)
         min-width: 410px
 
