@@ -6,21 +6,21 @@
 
     <p>Informationspflicht laut §5 E-Commerce Gesetz, §14 Unternehmensgesetzbuch, §63 Gewerbeordnung und Offenlegungspflicht
       laut §25 Mediengesetz</p>
-    <p>MusterFirma
-      <br /> Konstantin Anestopoulos
-      <br /> Stephansplatz 1 Stiege 1 Tür 1
-      <br /> 1010 Wien</p>
+    <p>{{contact?.company}}
+      <br /> {{contact?.name}}
+      <br /> {{contact?.street}}
+      <br /> {{contact?.city}}</p>
     <p>
       <strong>Unternehmensgegenstand:</strong> Mentaltrainer Dienstleistungen</p>
     <p>
-      <a mat-button href="tel: 0043 1 555 55 555">
-        <strong>Tel.:</strong> 0043 1 555 55 555</a>
+      <a mat-button href="tel:{{contact?.tel}}">
+        <strong>Tel.:</strong> {{contact?.tel}}</a>
       <br />
-      <a mat-button href="mailto: ">
-        <strong>E-Mail:</strong> konstantin.anesopoulos@test.at</a>
+      <a mat-button href="mailto:{{contact?.email}}">
+        <strong>E-Mail:</strong> {{contact?.email}}</a>
     </p>
     <p>
-      <strong>UID-Nummer:</strong> ATU12345678</p>
+      <strong>UID-Nummer:</strong> {{contact?.uidNr}}</p>
     <p>
       <strong>Mitglied bei:</strong> WKO, Landesinnung, etc.
       <br />

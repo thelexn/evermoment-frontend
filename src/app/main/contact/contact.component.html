@@ -5,28 +5,28 @@
     <div fxFlex="1 0 30" class="contactdata">
       <ul>
         <li>
-          <h1>Konstantin Anestopoulos</h1>
+          <h1>{{contact?.name}}</h1>
         </li>
         <li>
-          <h2>Dipl. Mentaltrainer</h2>
+          <h2>{{contact?.job}}</h2>
         </li>
-        <li>Projektmanager</li>
+        <li>{{contact?.job2}}</li>
         <li>
-          <a mat-button href="tel: 0043 1 555 55 555">
+          <a mat-button href="tel:{{contact?.tel}}">
             <i class="material-icons">phone</i>
-            0043 1 555 55 555
+            {{contact?.tel}}
           </a>
         </li>
         <li>
-          <a mat-button href="https://www.google.com/maps/place/Stephansdom,+1010+Wien/@48.2088484,16.3723963,3a,75y,358.83h,121.72t/data=!3m8!1e1!3m6!1sAF1QipOWQxW_HoC55B3OIBvQM7eT7NM--uhGQ3wgiFe_!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOWQxW_HoC55B3OIBvQM7eT7NM--uhGQ3wgiFe_%3Dw86-h86-k-no-pi-28.708332-ya355.77084-ro0-fo100!7i6500!8i3250!4m5!3m4!1s0x476d079f7175de6b:0xe07936082ee4ec40!8m2!3d48.2083206!4d16.3767451" target="_blank">
+          <a mat-button href="{{contact?.location}}" target="_blank">
             <i class="material-icons">location_on</i>
-            Stephansplatz 1, 1010 Wien
+            {{contact?.street}}, {{contact?.city}}
           </a>
         </li>
         <li>
-          <a mat-button href="mailto:k.anestopoulos@test.at">
+          <a mat-button href="{{contact?.email}}">
             <i class="material-icons">email</i>
-            k.anestopoulos@test.at
+            {{contact?.email}}
           </a>
         </li>
       </ul>
@@ -37,8 +37,7 @@
       <iframe
         fxFlex
         frameborder="0"
-        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB9amk0J0ru08ENZ3ofk4sj5lArrRdWHaY
-          &q=stephansplatz 1, 1010 wien"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB9amk0J0ru08ENZ3ofk4sj5lArrRdWHaY&q=stephansplatz 1, 1010 wien"
         allowfullscreen>
       </iframe>
 
