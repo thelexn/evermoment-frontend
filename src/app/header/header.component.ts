@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, AfterViewInit, ElementRef, Renderer2 } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { LinkService } from '../share/link.service';
 import { Link } from '../share/links';
@@ -10,13 +10,11 @@ import { Link } from '../share/links';
   providers: [LinkService]
 })
 
-export class HeaderComponent implements OnInit, AfterViewInit {
-
-  @ViewChild('mtb') mtb: ElementRef;
+export class HeaderComponent implements OnInit {
 
   links: Link[];
 
-  constructor(private linkservice: LinkService, private rd: Renderer2) { }
+  constructor(private linkservice: LinkService) { }
 
   getLinks(): void {
     this.linkservice.getLinks().then(links => this.links = links);
@@ -24,11 +22,6 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
     this.getLinks();
-  }
-
-  ngAfterViewInit(){
-    // console.log(this.mtb.nativeElement.offsetTop);
-    console.log(this.rd);
   }
 
 }
