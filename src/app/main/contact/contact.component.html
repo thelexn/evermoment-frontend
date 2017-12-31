@@ -1,8 +1,8 @@
 <section class="contact">
 
-  <article fxLayout fxLayoutWrap>
+  <article fxLayout fxLayoutWrap fxLayoutAlign="center center">
 
-    <div fxFlex="1 0 30" class="contactdata">
+    <div class="contactdata">
       <ul>
         <li>
           <h1>{{contact?.name}}</h1>
@@ -10,7 +10,9 @@
         <li>
           <h2>{{contact?.job}}</h2>
         </li>
-        <li>{{contact?.job2}}</li>
+        <li>
+          <h3>{{contact?.job2}}</h3>
+        </li>
         <li>
           <a mat-button href="tel:{{contact?.tel}}">
             <i class="material-icons">phone</i>
