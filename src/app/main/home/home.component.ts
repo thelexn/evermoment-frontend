@@ -11,6 +11,19 @@ import { Card } from '../../share/cards';
 })
 export class HomeComponent implements OnInit {
 
+  quote = 'Ich denke, also bin ich';
+  author = 'René Decartes';
+  article1 = `
+    Haben Sie sich schon einmal gefragt....was macht einen strahlenden Sieger bei einem Wettkampf, einen erfolgreichen Unternehmer,
+    eine glückliche und zufriedene Mutter aus? Ist es ein angeborenes "Erfolgs-" oder "Glücks-Gen", das diese Menschen
+    haben, oder können diese Fähigkeiten Erfolg und Zufriedenheit erlernt werden? Meiner Meinung nach haben diese Menschen
+    eines gemeinsam: Sie vertrauen sich selbst und haben gelernt, ihre Einstellung zu sich selbst und ihre Ziele so auszurichten,
+    dass sich diese förderlich auf ihr Leben auswirken. Und genau hier setzt mentales Training an.`;
+  article2 = `
+    Ich begleite Menschen, die mentale Stärke durch Erkennen und Auflösen von festgefahrene Denk-, Verhaltens- und Emotionsmustern
+    erreichen möchten. Ich gebe sowohl im Einzel-Training als auch in Seminaren und Lehrgängen das Wissen zu mentalen Techniken
+    weiter.`;
+
   cards: Card[];
 
   constructor(private cardservice: CardService) { }
